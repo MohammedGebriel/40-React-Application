@@ -1,0 +1,46 @@
+:root {
+    --background: #fff;
+    --text-primary: #000;
+    --button-bg: #000;
+    --button-text: #fff;
+}
+
+[data-theme ='dark'] {
+    --background: #000;
+    --text-primary: #fff;
+    --button-bg: #fff;
+    --button-text: #000;
+}
+.light-dark-mode {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+}
+.container-theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-theme p {
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 40px;
+}
+
+.container-theme button {
+    border: 1px solid var(--button-bg);
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    width: fit-content;
+    margin: 20px 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-weight: 600;
+}
